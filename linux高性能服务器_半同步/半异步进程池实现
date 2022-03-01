@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2022-03-01T12:56:37.746Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" version="16.6.4" etag="bv2OkgpgHbGC8QzHf2bf" type="github"><diagram id="K95IbjvKozRpPi4xnm5p">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-01T13:08:20.568Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="i3WhUo-gjp82cuqJIGQ9" version="16.6.4" type="github">
+  <diagram id="K95IbjvKozRpPi4xnm5p" name="Page-1">
+    <mxGraphModel dx="1550" dy="835" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-1" value="template &lt;typename T&gt; class processpool" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="35" y="28" width="379" height="582" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-2" value="private:&#xa;processpool(int listenfd, int process_number = 8);&#xa;void setup_sig_pipe();&#xa;void run_parent();&#xa;void run_child();&#xa;    /*进程池允许的最大子进程数量*/&#xa;    static const int MAX_PROCESS_NUMBER = 16;&#xa;    /*每个子进程最多能处理的客户数量*/&#xa;    static const int USER_PER_PROCESS = 65536;&#xa;    /*epoll最多能处理的事件数*/&#xa;    static const int MAX_EVENT_NUMBER = 10000;&#xa;    /*进程池中的进程总数*/&#xa;    int m_process_number;&#xa;    /*子进程在池中的序号，从0开始*/&#xa;    int m_idx;&#xa;    /*每个进程都有一个epoll内核事件表，用m_epollfd标识*/&#xa;    int m_epollfd;&#xa;    /*监听socket*/&#xa;    int m_listenfd;&#xa;    /*子进程通过m_stop来决定是否停止运行*/&#xa;    int m_stop;&#xa;    /*保存所有子进程的描述信息*/&#xa;    process* m_sub_process;&#xa;    /*进程池静态实例*/&#xa;    static processpool&lt;T&gt;* m_instance;" style="text;strokeColor=#E07A5F;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="0tMfggHyDnuu0DSBCQ1b-1">
+          <mxGeometry y="30" width="379" height="404" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-4" value="public:&#xa;static processpool&lt;T&gt;* create(int listenfd, int process_number = 8)&#xa;    ~processpool()&#xa;    {&#xa;        delete[] m_sub_process;&#xa;    }&#xa;    /*启动进程池*/&#xa;    void run();" style="text;strokeColor=#E07A5F;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="0tMfggHyDnuu0DSBCQ1b-1">
+          <mxGeometry y="434" width="379" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-5" value="class process" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="559" y="28" width="255" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-6" value="public:&#xa;    process() : m_pid(-1) {}&#xa;    pid_t m_pid;&#xa;&#xa;    int   m_pipefd[2];" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="0tMfggHyDnuu0DSBCQ1b-5">
+          <mxGeometry y="30" width="255" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-13" value="int main(int argc, char* argv[])" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="549" y="332" width="377" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-14" value="    processpool&lt;cgi_conn&gt;* pool =&#xa;        processpool&lt;cgi_conn&gt;::create(listenfd);  //创建进程池&#xa;    if (pool) {&#xa;        pool-&gt;run();&#xa;        delete pool;&#xa;    }" style="text;strokeColor=#E07A5F;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="0tMfggHyDnuu0DSBCQ1b-13">
+          <mxGeometry y="30" width="377" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-17" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="1" source="0tMfggHyDnuu0DSBCQ1b-14" target="0tMfggHyDnuu0DSBCQ1b-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0tMfggHyDnuu0DSBCQ1b-18" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="1" source="0tMfggHyDnuu0DSBCQ1b-2" target="0tMfggHyDnuu0DSBCQ1b-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
