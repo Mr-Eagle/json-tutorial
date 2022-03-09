@@ -1,1 +1,134 @@
-<mxfile host="app.diagrams.net" modified="2022-03-09T13:22:19.071Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" version="16.6.4" etag="qGGTd_E_zwsmjW_dA8pM" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">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</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-09T13:51:46.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="uBCoERiV5DTd_lm6fJ7W" version="16.6.4" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1762" dy="869" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--30" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.579;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FF6666;endArrow=classic;endFill=1;sourcePerimeterSpacing=15;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--0" target="Uscz21SQ1si1RZ5pgYw--4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="316" y="741" />
+              <mxPoint x="1021" y="741" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="class EventLoop" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="60" width="434" height="550" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="  private:&#xa;    // 声明顺序 wakeupFd_ &gt; pwakeupChannel_&#xa;    bool                 looping_;&#xa;    shared_ptr&lt;Epoll&gt;    poller_;&#xa;    int                  wakeupFd_;&#xa;    bool                 quit_;&#xa;    bool                 eventHandling_;&#xa;    mutable MutexLock    mutex_;&#xa;    std::vector&lt;Functor&gt; pendingFunctors_;&#xa;    bool                 callingPendingFunctors_;&#xa;    const pid_t          threadId_;&#xa;    shared_ptr&lt;Channel&gt;  pwakeupChannel_;&#xa;    void wakeup();&#xa;    void handleRead();&#xa;    void doPendingFunctors();&#xa;    void handleConn();" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=none;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="26" width="434" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--31" value="EventLoop::EventLoop()&#xa;    : looping_(false), poller_(new Epoll()), wakeupFd_(createEventfd()),&#xa;      quit_(false), eventHandling_(false), callingPendingFunctors_(false),&#xa;      threadId_(CurrentThread::tid()),&#xa;      pwakeupChannel_(new Channel(this, wakeupFd_))&#xa;{&#xa;    if (t_loopInThisThread) {&#xa;        // LOG &lt;&lt; &quot;Another EventLoop &quot; &lt;&lt; t_loopInThisThread &lt;&lt; &quot; exists in this&#xa;        // thread &quot; &lt;&lt; threadId_;&#xa;    }&#xa;    else {&#xa;        t_loopInThisThread = this;&#xa;    }&#xa;    // pwakeupChannel_-&gt;setEvents(EPOLLIN | EPOLLET | EPOLLONESHOT);&#xa;    pwakeupChannel_-&gt;setEvents(EPOLLIN | EPOLLET);&#xa;    pwakeupChannel_-&gt;setReadHandler(bind(&amp;EventLoop::handleRead, this));&#xa;    pwakeupChannel_-&gt;setConnHandler(bind(&amp;EventLoop::handleConn, this));&#xa;    poller_-&gt;epoll_add(pwakeupChannel_, 0);&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=default;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+          <mxGeometry y="263" width="434" height="287" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="class Epoll" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="883" y="20" width="477" height="246" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--25" value="  private:&#xa;    static const int          MAXFDS = 100000;&#xa;    int                       epollFd_;&#xa;    std::vector&lt;epoll_event&gt;  events_;&#xa;    std::shared_ptr&lt;Channel&gt;  fd2chan_[MAXFDS];&#xa;    std::shared_ptr&lt;HttpData&gt; fd2http_[MAXFDS];&#xa;    TimerManager              timerManager_;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="26" width="477" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--32" value="Epoll::Epoll() : epollFd_(epoll_create1(EPOLL_CLOEXEC)), events_(EVENTSNUM)&#xa;{&#xa;    assert(epollFd_ &gt; 0);&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=default;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="136" width="477" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--2" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--25" target="zkfFHV4jXpPFQw0GAbJ--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--9" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--3" target="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--3" value="class Channel" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="909" y="466" width="259" height="282" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--4" value="  private:&#xa;    typedef std::function&lt;void()&gt; CallBack;&#xa;    EventLoop* loop_;&#xa;    int        fd_;&#xa;    __uint32_t events_;&#xa;    __uint32_t revents_;&#xa;    __uint32_t lastEvents_;&#xa;    // 方便找到上层持有该Channel的对象&#xa;    std::weak_ptr&lt;HttpData&gt; holder_;&#xa;  private:&#xa;    int parse_URI();&#xa;    int parse_Headers();&#xa;    int analysisRequest();&#xa;    CallBack readHandler_;&#xa;    CallBack writeHandler_;&#xa;    CallBack errorHandler_;&#xa;    CallBack connHandler_;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--3">
+          <mxGeometry y="26" width="259" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--5" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--4" target="zkfFHV4jXpPFQw0GAbJ--1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="874" y="620" />
+              <mxPoint x="874" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--6" value="class MutexLock : noncopyable" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="447" width="261" height="116" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--7" value=" private:&#xa;  pthread_mutex_t mutex;&#xa;  // 友元类不受访问权限影响&#xa; private:&#xa;  friend class Condition;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--6">
+          <mxGeometry y="26" width="261" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--8" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--7" target="zkfFHV4jXpPFQw0GAbJ--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--10" value="class HttpData : public std::enable_shared_from_this&lt;HttpData&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1641" y="26" width="525" height="392" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--11" value="  private:&#xa;    EventLoop*               loop_;&#xa;    std::shared_ptr&lt;Channel&gt; channel_;&#xa;    int                      fd_;&#xa;    std::string              inBuffer_;&#xa;    std::string              outBuffer_;&#xa;    bool                     error_;&#xa;    ConnectionState          connectionState_;&#xa;    HttpMethod                         method_;&#xa;    HttpVersion                        HTTPVersion_;&#xa;    std::string                        fileName_;&#xa;    std::string                        path_;&#xa;    int                                nowReadPos_;&#xa;    ProcessState                       state_;&#xa;    ParseState                         hState_;&#xa;    bool                               keepAlive_;&#xa;    std::map&lt;std::string, std::string&gt; headers_;&#xa;    std::weak_ptr&lt;TimerNode&gt;           timer_;&#xa;    void          handleRead();&#xa;    void          handleWrite();&#xa;    void          handleConn();&#xa;    void          handleError(int fd, int err_num, std::string short_msg);&#xa;    URIState      parseURI();&#xa;    HeaderState   parseHeaders();&#xa;    AnalysisState analysisRequest();" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--10">
+          <mxGeometry y="26" width="525" height="366" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--12" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--11" target="zkfFHV4jXpPFQw0GAbJ--25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--13" value="class TimerManager" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1477" y="504" width="433" height="107" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--14" value="  private:&#xa;    typedef std::shared_ptr&lt;TimerNode&gt; SPTimerNode;&#xa;    std::priority_queue&lt;SPTimerNode, std::deque&lt;SPTimerNode&gt;, TimerCmp&gt;&#xa;        timerNodeQueue;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--13">
+          <mxGeometry y="26" width="433" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--15" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--14" target="zkfFHV4jXpPFQw0GAbJ--25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--20" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;entryX=0.457;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--16" target="Uscz21SQ1si1RZ5pgYw--14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1542" y="593.3999633789062" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1705" y="611" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--29" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.535;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FF6666;endArrow=classic;endFill=1;sourcePerimeterSpacing=15;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--16" target="Uscz21SQ1si1RZ5pgYw--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--16" value="class TimerNode" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1488" y="662" width="433" height="107" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--17" value="private:&#xa;    bool                      deleted_;&#xa;    size_t                    expiredTime_;&#xa;    std::shared_ptr&lt;HttpData&gt; SPHttpData;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--16">
+          <mxGeometry y="26" width="433" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--18" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;jumpStyle=none;sourcePerimeterSpacing=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--11" target="Uscz21SQ1si1RZ5pgYw--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--21" value="struct TimerCmp" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1918" y="542" width="323" height="145" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--22" value="{&#xa;    bool operator()(std::shared_ptr&lt;TimerNode&gt;&amp; a,&#xa;                    std::shared_ptr&lt;TimerNode&gt;&amp; b) const&#xa;    {&#xa;        return a-&gt;getExpTime() &gt; b-&gt;getExpTime();&#xa;    }&#xa;};" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;" vertex="1" parent="Uscz21SQ1si1RZ5pgYw--21">
+          <mxGeometry y="26" width="323" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--24" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--22" target="Uscz21SQ1si1RZ5pgYw--14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--26" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;endArrow=classic;endFill=1;sourcePerimeterSpacing=15;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--17" target="Uscz21SQ1si1RZ5pgYw--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uscz21SQ1si1RZ5pgYw--27" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FF6666;endArrow=classic;endFill=1;sourcePerimeterSpacing=15;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Uscz21SQ1si1RZ5pgYw--4" target="Uscz21SQ1si1RZ5pgYw--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
