@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-03-14T03:53:09.526Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="cEeqoHi4eKeI8QMCsu4w" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-15T09:00:35.726Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="IIysHtvZX58XrONrHyj-" version="17.0.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2900" dy="3360" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+    <mxGraphModel dx="2900" dy="4529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -323,7 +323,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-61" value="Main.cpp" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="12" y="-1679" width="427" height="811" as="geometry">
+          <mxGeometry x="44" y="-3112" width="427" height="811" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -334,10 +334,16 @@
           <mxGeometry y="79" width="427" height="29" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-81" value="    Server myHTTPServer(&amp;mainLoop, threadNum, port);" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-61">
-          <mxGeometry y="108" width="427" height="29" as="geometry" />
+          <mxGeometry y="108" width="427" height="642" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-116" value="    myHTTPServer.start();" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-61">
+          <mxGeometry y="750" width="427" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-117" value="    mainLoop.loop();" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-61">
+          <mxGeometry y="779" width="427" height="29" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-66" value="class EventLoop" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="616" y="-1756" width="428" height="325" as="geometry">
+          <mxGeometry x="648" y="-3188" width="428" height="325" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -348,7 +354,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-71" value="class Epoll" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1186" y="-1767" width="483" height="98" as="geometry">
+          <mxGeometry x="1218" y="-3199" width="483" height="98" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -364,7 +370,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-76" value="class Channel" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1186" y="-1612" width="295" height="109" as="geometry">
+          <mxGeometry x="1218" y="-3044" width="295" height="109" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -380,34 +386,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-86" value="class Server" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="616" y="-1407" width="490" height="381" as="geometry">
+          <mxGeometry x="648" y="-2839" width="497" height="574" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KjH-scwqGW-Tt5N11Xai-114" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;" edge="1" parent="KjH-scwqGW-Tt5N11Xai-86" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-112">
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-114" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="KjH-scwqGW-Tt5N11Xai-86" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-112">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KjH-scwqGW-Tt5N11Xai-115" value="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-114">
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-115" value="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;labelBackgroundColor=#F4F1DE;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-114">
           <mxGeometry x="0.1152" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-88" value="Server::Server(EventLoop* loop, int threadNum, int port)&#xa;    : loop_(loop), threadNum_(threadNum), port_(port),&#xa;      eventLoopThreadPool_(new EventLoopThreadPool(loop_, threadNum)),&#xa;      started_(false), acceptChannel_(new Channel(loop_)),&#xa;      listenFd_(socket_bind_listen(port_))&#xa;{&#xa;    acceptChannel_-&gt;setFd(listenFd_);  //莫名其妙为啥不放到构造函数一起操作呢？&#xa;    handle_for_sigpipe();&#xa;    if (setSocketNonBlocking(listenFd_) &lt; 0) {&#xa;        perror(&quot;set socket non block failed&quot;);&#xa;        abort();&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=none;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-86">
-          <mxGeometry y="26" width="490" height="199" as="geometry" />
+          <mxGeometry y="26" width="497" height="199" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-112" value="void handle_for_sigpipe()&#xa;{&#xa;    struct sigaction sa;&#xa;    memset(&amp;sa, &#39;\0&#39;, sizeof(sa));&#xa;    sa.sa_handler = SIG_IGN;&#xa;    // SIG_IGN忽略SIGPIPE;SIGPIPE发生在：写一个没有读的管道，默认动作是终止程序。&#xa;    sa.sa_flags = 0;&#xa;    if (sigaction(SIGPIPE, &amp;sa, NULL))&#xa;        return;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-86">
-          <mxGeometry y="225" width="490" height="156" as="geometry" />
+          <mxGeometry y="225" width="497" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-133" value="void Server::start()&#xa;{&#xa;    eventLoopThreadPool_-&gt;start();&#xa;    // acceptChannel_-&gt;setEvents(EPOLLIN | EPOLLET | EPOLLONESHOT);&#xa;    acceptChannel_-&gt;setEvents(EPOLLIN | EPOLLET);  //可读事件 | ET模式&#xa;    acceptChannel_-&gt;setReadHandler(bind(&amp;Server::handNewConn, this));&#xa;    //接受client socket&#xa;    acceptChannel_-&gt;setConnHandler(bind(&amp;Server::handThisConn, this));&#xa;    //&#xa;    loop_-&gt;addToPoller(acceptChannel_, 0);&#xa;    started_ = true;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-86">
+          <mxGeometry y="381" width="497" height="193" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-90" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-81" target="KjH-scwqGW-Tt5N11Xai-88">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-94" value="class EventLoopThreadPool : noncopyable" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1186" y="-1462" width="486" height="165" as="geometry">
+          <mxGeometry x="1218" y="-2894" width="501" height="357" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-96" value="EventLoopThreadPool::EventLoopThreadPool(EventLoop* baseLoop, int numThreads)&#xa;    : baseLoop_(baseLoop), started_(false), numThreads_(numThreads), next_(0)&#xa;{&#xa;    if (numThreads_ &lt;= 0) {&#xa;        LOG &lt;&lt; &quot;numThreads_ &lt;= 0&quot;;&#xa;        abort();  //中止程序执行，直接从调用的地方跳出。&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=none;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-94">
-          <mxGeometry y="26" width="486" height="136" as="geometry" />
+          <mxGeometry y="26" width="501" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-135" value="void EventLoopThreadPool::start()&#xa;{&#xa;    baseLoop_-&gt;assertInLoopThread();&#xa;    //只是判断当前的保存的threadId_是否和线程ID一致&#xa;    started_ = true;&#xa;    for (int i = 0; i &lt; numThreads_; ++i) {  // numThreads_ == 10&#xa;        std::shared_ptr&lt;EventLoopThread&gt; t(new EventLoopThread());  //新建线程&#xa;        threads_.push_back(t);&#xa;        loops_.push_back(t-&gt;startLoop());  // 10个线程都卡在这里了&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-94">
+          <mxGeometry y="162" width="501" height="174" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-98" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-96">
           <mxGeometry relative="1" as="geometry" />
@@ -420,8 +432,8 @@
         <mxCell id="KjH-scwqGW-Tt5N11Xai-99" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.01;entryY=0.833;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-67">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1138" y="-1282" />
-              <mxPoint x="1138" y="-1491" />
+              <mxPoint x="1170" y="-2714" />
+              <mxPoint x="1170" y="-2923" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -433,8 +445,8 @@
         <mxCell id="KjH-scwqGW-Tt5N11Xai-104" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-78">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1138" y="-1282" />
-              <mxPoint x="1138" y="-1544" />
+              <mxPoint x="1170" y="-2714" />
+              <mxPoint x="1170" y="-2976" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -444,7 +456,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-108" value="Util.cpp" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1186" y="-1280" width="510" height="584" as="geometry">
+          <mxGeometry x="1898" y="-2894" width="510" height="584" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -452,10 +464,105 @@
           <mxGeometry y="26" width="510" height="558" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-110" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-88" target="KjH-scwqGW-Tt5N11Xai-108">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="-2714" />
+              <mxPoint x="1175" y="-2437" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-111" value="4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;labelBackgroundColor=#F4F1DE;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-110">
           <mxGeometry x="-0.3171" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-134" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-116" target="KjH-scwqGW-Tt5N11Xai-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-136" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#393C56;strokeColor=#00FFFF;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-133" target="KjH-scwqGW-Tt5N11Xai-135">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1145" y="-2387" />
+              <mxPoint x="1198" y="-2387" />
+              <mxPoint x="1198" y="-2645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-137" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;labelBackgroundColor=#F4F1DE;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-136">
+          <mxGeometry x="-0.5303" y="-4" relative="1" as="geometry">
+            <mxPoint x="-29" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-163" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#00FFFF;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-138" target="KjH-scwqGW-Tt5N11Xai-148">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730" y="-2032" />
+              <mxPoint x="1730" y="-1724" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-138" value="class EventLoopThread : noncopyable" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1214" y="-2364" width="464" height="332" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-139" value="EventLoopThread::EventLoopThread()&#xa;    : loop_(NULL), exiting_(false),&#xa;      thread_(bind(&amp;EventLoopThread::threadFunc, this), &quot;EventLoopThread&quot;),&#xa;      mutex_(), cond_(mutex_)&#xa;{&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=none;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-138">
+          <mxGeometry y="26" width="464" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-157" value="EventLoop* EventLoopThread::startLoop()&#xa;{&#xa;    assert(!thread_.started());  // true&#xa;    thread_.start();             //应该是这里就被阻塞了？&#xa;    {&#xa;        MutexLockGuard lock(mutex_);&#xa;        // 一直等到threadFun在Thread里真正跑起来&#xa;        while (loop_ == NULL)&#xa;            //默认情况会进入这个if分支，也就是说会进入阻塞状态并释放lock&#xa;            cond_.wait();&#xa;    }&#xa;    return loop_;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=default;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-138">
+          <mxGeometry y="132" width="464" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-143" value="class Thread : noncopyable " style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1214" y="-1986" width="494" height="650" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-145" value="Thread::Thread(const ThreadFunc&amp; func, const string&amp; n)&#xa;    : started_(false), joined_(false), pthreadId_(0), tid_(0), func_(func),&#xa;      name_(n), latch_(1)&#xa;{&#xa;    setDefaultName();&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
+          <mxGeometry y="26" width="494" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-148" value="void Thread::start()&#xa;{&#xa;    assert(!started_);  // true，其实就是判断下目前状态是未启动&#xa;    started_         = true;  //更新线程状态&#xa;    ThreadData* data = new ThreadData(func_, name_, &amp;tid_, &amp;latch_);&#xa;    // name_ == &quot;EventLoopThread&quot;&#xa;    // func_ == bind(&amp;EventLoopThread::threadFunc, this)&#xa;    if (pthread_create(&amp;pthreadId_, NULL, &amp;startThread, data)) {&#xa;        //创建线程，如果创建线程失败进入这个if分支&#xa;        started_ = false;&#xa;        delete data;&#xa;    }&#xa;    else {&#xa;        latch_.wait();&#xa;        assert(tid_ &gt; 0);&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
+          <mxGeometry y="132" width="494" height="259" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-164" value="void* startThread(void* obj)&#xa;{&#xa;    ThreadData* data = static_cast&lt;ThreadData*&gt;(obj);&#xa;    data-&gt;runInThread();&#xa;    delete data;&#xa;    return NULL;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
+          <mxGeometry y="391" width="494" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-165" value="struct ThreadData&#xa;{&#xa;    typedef Thread::ThreadFunc ThreadFunc;&#xa;    ThreadFunc                 func_;&#xa;    string                     name_;&#xa;    pid_t*                     tid_;&#xa;    CountDownLatch*            latch_;&#xa;    ThreadData(const ThreadFunc&amp; func,&#xa;               const string&amp;     name,&#xa;               pid_t*            tid,&#xa;               CountDownLatch*   latch)&#xa;        : func_(func), name_(name), tid_(tid), latch_(latch)&#xa;    {&#xa;    }&#xa;    void runInThread()&#xa;    {&#xa;        *tid_ = CurrentThread::tid();&#xa;        tid_  = NULL;&#xa;        latch_-&gt;countDown();&#xa;        latch_ = NULL;&#xa;        CurrentThread::t_threadName = name_.empty() ? &quot;Thread&quot; : name_.c_str();&#xa;        prctl(PR_SET_NAME, CurrentThread::t_threadName);&#xa;        func_();&#xa;        CurrentThread::t_threadName = &quot;finished&quot;;&#xa;    }&#xa;};" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
+          <mxGeometry y="505" width="494" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-151" value="class HttpData : public std::enable_shared_from_this&lt;HttpData&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1792" y="-2090" width="499" height="275" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-153" value="HttpData::HttpData(EventLoop* loop, int connfd)&#xa;    : loop_(loop), fd_(connfd), channel_(new Channel(loop, connfd)),&#xa;      error_(false), connectionState_(H_CONNECTED), method_(METHOD_GET),&#xa;      HTTPVersion_(HTTP_11), nowReadPos_(0), state_(STATE_PARSE_URI),&#xa;      hState_(H_START), keepAlive_(false)&#xa;{&#xa;    // loop_-&gt;queueInLoop(bind(&amp;HttpData::setHandlers, this));&#xa;    channel_-&gt;setReadHandler(bind(&amp;HttpData::handleRead, this));&#xa;    channel_-&gt;setWriteHandler(bind(&amp;HttpData::handleWrite, this));&#xa;    channel_-&gt;setConnHandler(bind(&amp;HttpData::handleConn, this));&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-151">
+          <mxGeometry y="26" width="499" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-154" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#00FFFF;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-135" target="KjH-scwqGW-Tt5N11Xai-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-159" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-154">
+          <mxGeometry x="0.0863" y="4" relative="1" as="geometry">
+            <mxPoint x="-10" y="78" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-155" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#00FFFF;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-139" target="KjH-scwqGW-Tt5N11Xai-145">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1131" y="-2285" />
+              <mxPoint x="1131" y="-1907" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-158" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#393C56;strokeColor=#00FFFF;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-135" target="KjH-scwqGW-Tt5N11Xai-157">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1770" y="-2645" />
+              <mxPoint x="1770" y="-2134" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KjH-scwqGW-Tt5N11Xai-160" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#393C56;" vertex="1" connectable="0" parent="KjH-scwqGW-Tt5N11Xai-158">
+          <mxGeometry x="0.0929" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
