@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-15T09:00:35.726Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="IIysHtvZX58XrONrHyj-" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-15T09:00:56.019Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="ms7Ldvm9_mPk9SRc9U9J" version="17.0.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2900" dy="4529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
       <root>
@@ -513,21 +513,21 @@
           <mxGeometry y="132" width="464" height="197" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-143" value="class Thread : noncopyable " style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1214" y="-1986" width="494" height="650" as="geometry">
+          <mxGeometry x="1214" y="-1986" width="505" height="878" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-145" value="Thread::Thread(const ThreadFunc&amp; func, const string&amp; n)&#xa;    : started_(false), joined_(false), pthreadId_(0), tid_(0), func_(func),&#xa;      name_(n), latch_(1)&#xa;{&#xa;    setDefaultName();&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
-          <mxGeometry y="26" width="494" height="106" as="geometry" />
+          <mxGeometry y="26" width="505" height="106" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-148" value="void Thread::start()&#xa;{&#xa;    assert(!started_);  // true，其实就是判断下目前状态是未启动&#xa;    started_         = true;  //更新线程状态&#xa;    ThreadData* data = new ThreadData(func_, name_, &amp;tid_, &amp;latch_);&#xa;    // name_ == &quot;EventLoopThread&quot;&#xa;    // func_ == bind(&amp;EventLoopThread::threadFunc, this)&#xa;    if (pthread_create(&amp;pthreadId_, NULL, &amp;startThread, data)) {&#xa;        //创建线程，如果创建线程失败进入这个if分支&#xa;        started_ = false;&#xa;        delete data;&#xa;    }&#xa;    else {&#xa;        latch_.wait();&#xa;        assert(tid_ &gt; 0);&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
-          <mxGeometry y="132" width="494" height="259" as="geometry" />
+          <mxGeometry y="132" width="505" height="259" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-164" value="void* startThread(void* obj)&#xa;{&#xa;    ThreadData* data = static_cast&lt;ThreadData*&gt;(obj);&#xa;    data-&gt;runInThread();&#xa;    delete data;&#xa;    return NULL;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
-          <mxGeometry y="391" width="494" height="114" as="geometry" />
+          <mxGeometry y="391" width="505" height="114" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-165" value="struct ThreadData&#xa;{&#xa;    typedef Thread::ThreadFunc ThreadFunc;&#xa;    ThreadFunc                 func_;&#xa;    string                     name_;&#xa;    pid_t*                     tid_;&#xa;    CountDownLatch*            latch_;&#xa;    ThreadData(const ThreadFunc&amp; func,&#xa;               const string&amp;     name,&#xa;               pid_t*            tid,&#xa;               CountDownLatch*   latch)&#xa;        : func_(func), name_(name), tid_(tid), latch_(latch)&#xa;    {&#xa;    }&#xa;    void runInThread()&#xa;    {&#xa;        *tid_ = CurrentThread::tid();&#xa;        tid_  = NULL;&#xa;        latch_-&gt;countDown();&#xa;        latch_ = NULL;&#xa;        CurrentThread::t_threadName = name_.empty() ? &quot;Thread&quot; : name_.c_str();&#xa;        prctl(PR_SET_NAME, CurrentThread::t_threadName);&#xa;        func_();&#xa;        CurrentThread::t_threadName = &quot;finished&quot;;&#xa;    }&#xa;};" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-143">
-          <mxGeometry y="505" width="494" height="114" as="geometry" />
+          <mxGeometry y="505" width="505" height="373" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-151" value="class HttpData : public std::enable_shared_from_this&lt;HttpData&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1792" y="-2090" width="499" height="275" as="geometry">
