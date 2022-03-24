@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T08:59:48.210Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="rjZeLobt6MQq5a1mPVGZ" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-24T07:55:55.895Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="dP9RsSoVgt_RsNKr1VW4" version="17.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2829" dy="4342" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+    <mxGraphModel dx="2377" dy="4342" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -386,7 +386,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-86" value="class Server" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="648" y="-2839" width="497" height="574" as="geometry">
+          <mxGeometry x="648" y="-2839" width="535" height="1170" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -399,13 +399,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-88" value="Server::Server(EventLoop* loop, int threadNum, int port)&#xa;    : loop_(loop), threadNum_(threadNum), port_(port),&#xa;      eventLoopThreadPool_(new EventLoopThreadPool(loop_, threadNum)),&#xa;      started_(false), acceptChannel_(new Channel(loop_)),&#xa;      listenFd_(socket_bind_listen(port_))&#xa;{&#xa;    acceptChannel_-&gt;setFd(listenFd_);  //莫名其妙为啥不放到构造函数一起操作呢？&#xa;    handle_for_sigpipe();&#xa;    if (setSocketNonBlocking(listenFd_) &lt; 0) {&#xa;        perror(&quot;set socket non block failed&quot;);&#xa;        abort();&#xa;    }&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=none;" parent="KjH-scwqGW-Tt5N11Xai-86" vertex="1">
-          <mxGeometry y="26" width="497" height="199" as="geometry" />
+          <mxGeometry y="26" width="535" height="199" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-112" value="void handle_for_sigpipe()&#xa;{&#xa;    struct sigaction sa;&#xa;    memset(&amp;sa, &#39;\0&#39;, sizeof(sa));&#xa;    sa.sa_handler = SIG_IGN;&#xa;    // SIG_IGN忽略SIGPIPE;SIGPIPE发生在：写一个没有读的管道，默认动作是终止程序。&#xa;    sa.sa_flags = 0;&#xa;    if (sigaction(SIGPIPE, &amp;sa, NULL))&#xa;        return;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" parent="KjH-scwqGW-Tt5N11Xai-86" vertex="1">
-          <mxGeometry y="225" width="497" height="156" as="geometry" />
+          <mxGeometry y="225" width="535" height="156" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-133" value="void Server::start()&#xa;{&#xa;    eventLoopThreadPool_-&gt;start();&#xa;    // acceptChannel_-&gt;setEvents(EPOLLIN | EPOLLET | EPOLLONESHOT);&#xa;    acceptChannel_-&gt;setEvents(EPOLLIN | EPOLLET);  //可读事件 | ET模式&#xa;    acceptChannel_-&gt;setReadHandler(bind(&amp;Server::handNewConn, this));&#xa;    //接受client socket&#xa;    acceptChannel_-&gt;setConnHandler(bind(&amp;Server::handThisConn, this));&#xa;    //&#xa;    loop_-&gt;addToPoller(acceptChannel_, 0);&#xa;    started_ = true;&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" parent="KjH-scwqGW-Tt5N11Xai-86" vertex="1">
-          <mxGeometry y="381" width="497" height="193" as="geometry" />
+          <mxGeometry y="381" width="535" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="D-Clh6hckSL1q5lwCK16-0" value="void Server::handNewConn()&#xa;{&#xa;    struct sockaddr_in client_addr;&#xa;    memset(&amp;client_addr, 0, sizeof(struct sockaddr_in));&#xa;    socklen_t client_addr_len = sizeof(client_addr);&#xa;    int       accept_fd       = 0;&#xa;    while ((accept_fd = accept(listenFd_, (struct sockaddr*)&amp;client_addr,&#xa;                               &amp;client_addr_len)) &gt; 0) {&#xa;        //初始化client socket&#xa;        EventLoop* loop = eventLoopThreadPool_-&gt;getNextLoop();&#xa;        //获得std::vector&lt;EventLoop *&gt; EventLoopThreadPool::loops_loops_[0]&#xa;        LOG &lt;&lt; &quot;New connection from &quot; &lt;&lt; inet_ntoa(client_addr.sin_addr) &lt;&lt; &quot;:&quot;&#xa;            &lt;&lt; ntohs(client_addr.sin_port);&#xa;        // cout &lt;&lt; &quot;new connection&quot; &lt;&lt; endl;&#xa;        // cout &lt;&lt; inet_ntoa(client_addr.sin_addr) &lt;&lt; endl;&#xa;        // cout &lt;&lt; ntohs(client_addr.sin_port) &lt;&lt; endl;&#xa;        /*&#xa;        // TCP的保活机制默认是关闭的&#xa;        int optval = 0;&#xa;        socklen_t len_optval = 4;&#xa;        getsockopt(accept_fd, SOL_SOCKET,  SO_KEEPALIVE, &amp;optval, &amp;len_optval);&#xa;        cout &lt;&lt; &quot;optval ==&quot; &lt;&lt; optval &lt;&lt; endl;&#xa;        */&#xa;        // 限制服务器的最大并发连接数&#xa;        if (accept_fd &gt;= MAXFDS) {&#xa;            close(accept_fd);&#xa;            continue;&#xa;        }&#xa;        // 设为非阻塞模式&#xa;        if (setSocketNonBlocking(accept_fd) &lt; 0) {&#xa;            LOG &lt;&lt; &quot;Set non block failed!&quot;;&#xa;            // perror(&quot;Set non block failed!&quot;);&#xa;            return;&#xa;        }&#xa;        setSocketNodelay(accept_fd);  //关闭Nagle算法&#xa;        // setSocketNoLinger(accept_fd);&#xa;        shared_ptr&lt;HttpData&gt; req_info(new HttpData(loop, accept_fd));&#xa;        req_info-&gt;getChannel()-&gt;setHolder(req_info);  //设置channel-httpdata关系&#xa;        loop-&gt;queueInLoop(std::bind(&amp;HttpData::newEvent, req_info));&#xa;    }&#xa;    acceptChannel_-&gt;setEvents(EPOLLIN | EPOLLET);&#xa;}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#393C56;strokeColor=#E07A5F;" vertex="1" parent="KjH-scwqGW-Tt5N11Xai-86">
+          <mxGeometry y="574" width="535" height="596" as="geometry" />
         </mxCell>
         <mxCell id="KjH-scwqGW-Tt5N11Xai-90" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;labelBackgroundColor=#F4F1DE;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="KjH-scwqGW-Tt5N11Xai-81" target="KjH-scwqGW-Tt5N11Xai-88" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -597,6 +600,15 @@
         </mxCell>
         <mxCell id="DDp0w34CXhIu31KfOlfU-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#00FFFF;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="DDp0w34CXhIu31KfOlfU-7" target="DDp0w34CXhIu31KfOlfU-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D-Clh6hckSL1q5lwCK16-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#00FFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="D-Clh6hckSL1q5lwCK16-0" target="KjH-scwqGW-Tt5N11Xai-153">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1183" y="-2013" />
+              <mxPoint x="1488" y="-2013" />
+              <mxPoint x="1488" y="-2011" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
